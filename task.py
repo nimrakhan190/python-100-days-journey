@@ -1,4 +1,8 @@
-print("Welcome to the band name!")
-city = input("What's your city name where you grew up?\n")
-pet = input("What's the name of your pet?\n")
-print("Your band name is: " + city + " " + pet)
+print("Welcome to the tip calculator!")
+bill = float(input("What was the total bill? $"))
+tip = int(input("What percentage tip would you like to give? 10 12 15 "))
+people = int(input("How many people to split the bill? "))
+
+payment = bill * (1+tip/100)
+total_bill = payment/people
+print("Each person should pay: $" + str(round(total_bill,2)))
